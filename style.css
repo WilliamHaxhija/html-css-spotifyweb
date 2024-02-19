@@ -1,6 +1,7 @@
 /*--------------
      RESET
 --------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 /*--------------
    TYPOGRAPHY
 --------------*/
+
 body {
     font-family: Montferrat, sans-serif;
 }
@@ -17,11 +19,15 @@ body {
 /*--------------
   MEDIAQUERIES
 --------------*/
+
 /*--- Horizontal oriented Tablet ---*/
+
 @media screen and (max-width: 1100px) {}
 
 /*--- Vertical oriented Tablet ---*/
+
 @media screen and (max-width: 700px) {}
 
 /*--- Smartphone ---*/
+
 @media screen and (max-width: 600px) {}
