@@ -14,6 +14,131 @@
 
 body {
     font-family: Montferrat, sans-serif;
+    color: white;
+}
+
+/*--------------
+    GENERAL
+--------------*/
+
+.wrapper {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+/*--------------
+     FOOTER
+--------------*/
+
+footer {
+    height: 5.4rem;
+    width: 100%;
+    background-color: #282828;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    font-size: 0.8rem;
+}
+
+footer .row {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+footer .col {
+    display: flex;
+    width: 20%;
+}
+
+footer .col:nth-child(2) {
+    flex-grow: 1;
+}
+
+.footer-artist, .playing-artist, .save-track, .music-time, .volume-ctrl {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.music-time {
+    gap: 1.5rem;
+}
+
+.footer-artist {
+    gap: 3rem;
+}
+
+.music-ctrl {
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-commands {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.3rem;
+}
+
+.music-commands i {
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.music-commands i:nth-child(3) {
+    font-size: 2rem;
+}
+
+.volume-ctrl {
+    justify-content: end;
+}
+
+footer img {
+    max-width: 2.5rem;
+}
+
+.artist-dscr * {
+    display: block;
+}
+
+.music-time {
+    width: 100%;
+    justify-content: center;
+}
+
+.music-bar, .volume {
+    display: inline-block;
+    background-color: white;
+    height: 4px;
+    width: 45%;
+    border-radius: 1rem;
+}
+
+.music-bar {
+    width: 60%;
+}
+
+.save-track, .artist-dscr small {
+    color: #878787;
+}
+
+.music-bar, .volume {
+    background-color: #5a5a5a;
+}
+
+footer span {
+    font-weight: 900;
+    color: white;
+}
+
+.music-time small {
+    font-weight: 900;
 }
 
 /*--------------
@@ -26,8 +151,29 @@ body {
 
 /*--- Vertical oriented Tablet ---*/
 
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+
+        /* footer */
+
+        .save-track {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    
+        .footer-artist {
+            gap: 1.5rem;
+        }
+    
+}
 
 /*--- Smartphone ---*/
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+
+       /* footer */
+
+    .music-bar {
+        width: 40%;
+    }
+
+}
