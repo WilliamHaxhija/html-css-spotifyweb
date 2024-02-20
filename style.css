@@ -148,6 +148,7 @@ header .profile i {
 --------------*/
 
 main {
+    background-color: #141922;
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -156,7 +157,6 @@ main {
 --------------*/
 
 section {
-    background-color: #141922;
     width: 100%;
     padding: 0 1.5rem;
 }
@@ -222,19 +222,19 @@ button {
     margin-top: 3px;
 }
 
-/*--- Section Recently played and creato per---*/
+/*--- Other Sections---*/
 
 .recently-played {
     padding-top: 2rem;
 }
 
-.recently-played .row, .creato-per .row {
+.recently-played .row, .creato-per .row, .artisti-popolari .row {
     flex-wrap: wrap;
     padding: 2rem 0;
     gap: 1rem;
 }
 
-.recently-played .col, .creato-per .col {
+.recently-played .col, .creato-per .col, .artisti-popolari .col {
     max-width: calc((100% / 6) - 1rem)
 }
 
@@ -242,7 +242,7 @@ button {
     text-align: center;
 }
 
-.recently-played img, .creato-per img {
+.recently-played img, .creato-per img, .artisti-popolari img {
     max-width: 100%;
 }
 
@@ -261,12 +261,16 @@ h2 {
     padding: 0 1.5rem;
 }
 
-.creato-per h1 {
+.creato-per h1, .artisti-popolari h1 {
     margin-bottom: 0.5rem;
 }
 
-.creato-per small {
+.creato-per small, .artisti-popolari small {
     color: #a3a3a3;
+}
+
+.artisti-popolari img {
+    border-radius: 200px;
 }
 
 /*--------------
@@ -395,7 +399,7 @@ footer span {
         max-width: calc(25% - 1rem);
        }
 
-       .creato-per .col {
+       .creato-per .col, .artisti-popolari .col {
         max-width: calc(25% - 1rem);
        }
 }
@@ -406,7 +410,7 @@ footer span {
 
     /* recently played and creato per*/
 
-    .recently-played .col, .creato-per .col {
+    .recently-played .col, .creato-per .col, .artisti-popolari .col {
     max-width: calc(50% - 1rem);
    }
 
