@@ -54,7 +54,7 @@ header .wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 15rem;
+    width: 15rem;
     height: 100%;
     background-color: black;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
@@ -149,6 +149,7 @@ header .profile i {
 
 main {
     flex-grow: 1;
+    overflow-y: auto;
 }
 /*--------------
     SECTIONS
@@ -221,19 +222,19 @@ button {
     margin-top: 3px;
 }
 
-/*--- Section Recently played ---*/
+/*--- Section Recently played and creato per---*/
 
 .recently-played {
     padding-top: 2rem;
 }
 
-.recently-played .row {
+.recently-played .row, .creato-per .row {
     flex-wrap: wrap;
     padding: 2rem 0;
     gap: 1rem;
 }
 
-.recently-played .col {
+.recently-played .col, .creato-per .col {
     max-width: calc((100% / 6) - 1rem)
 }
 
@@ -241,7 +242,7 @@ button {
     text-align: center;
 }
 
-.recently-played img {
+.recently-played img, .creato-per img {
     max-width: 100%;
 }
 
@@ -254,6 +255,18 @@ h2 {
     color: #a3a3a3;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.creato-per {
+    padding: 0 1.5rem;
+}
+
+.creato-per h1 {
+    margin-bottom: 0.5rem;
+}
+
+.creato-per small {
+    color: #a3a3a3;
 }
 
 /*--------------
@@ -291,10 +304,6 @@ footer .col:nth-child(2) {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.music-time {
-    gap: 1.5rem;
 }
 
 .footer-artist {
@@ -337,6 +346,7 @@ footer img {
 .music-time {
     width: 100%;
     justify-content: center;
+    gap: 1.5rem;
 }
 
 .music-bar, .volume {
@@ -384,15 +394,19 @@ footer span {
      .recently-played .col {
         max-width: calc(25% - 1rem);
        }
+
+       .creato-per .col {
+        max-width: calc(25% - 1rem);
+       }
 }
 
 /*--- Vertical oriented Tablet ---*/
 
 @media screen and (max-width: 700px) {
 
-    /* recently played */
+    /* recently played and creato per*/
 
-    .recently-played .col {
+    .recently-played .col, .creato-per .col {
     max-width: calc(50% - 1rem);
    }
 
@@ -497,5 +511,16 @@ footer span {
 
     .volume {
         width: 45%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    
+    .music-commands {
+        gap: 1rem;
+    } 
+    
+    .music-time {
+        gap: 0.5rem;
     }
 }
