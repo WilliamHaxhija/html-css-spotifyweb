@@ -12,68 +12,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="wrap">
-            <div>
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="logo">
+    <div class="app-wrapper">
+        <header>
+            <div class="wrap">
+                <div>
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="logo">
+                    </div>
+                    <div class="logo-small">
+                        <img src="./img/logo-small.svg" alt="logo">
+                    </div>
+                    <nav>
+                        <div class="home">
+                            <a href="#">
+                                <img src="./img/home.svg" alt="home">
+                            </a>
+                            <a href="#">Home</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./img/search.svg" alt="search">
+                            </a>
+                            <a href="#">Cerca</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./img/libreria.svg" alt="libreria">
+                            </a>
+                            <a href="#">La tua libreria</a>
+                        </div>
+                    </nav>
+                    <div class="playlist">
+                        <ul>PLAYLIST
+                            <li>
+                                <i class="fa-solid fa-square-plus"></i>
+                                Crea Playlist
+                            </li>
+                            <li>Chill</li>
+                            <li>Party</li>
+                            <li>Roba Nuova</li>
+                            <li>Consigliati</li>
+                            <li>#Metal</li>
+                            <li>#Pop</li>
+                            <li>#Indie</li> 
+                        </ul>
+                    </div>
                 </div>
-                <div class="logo-small">
-                    <img src="./img/logo-small.svg" alt="logo">
+                <div class="profile">
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info visible"></i>
+                        <small>Installa app</small>
+                    </a>
+                    <br>
+                    <hr>
+                    <div class="profile-link">
+                        <a href="#">
+                            <img src="./img/profile.svg" alt="profile">
+                        </a>
+                    </div>
+                    <span class="name">Jhon Doe</span>
                 </div>
-                <nav>
-                    <div class="home">
-                        <a href="#">
-                            <img src="./img/home.svg" alt="home">
-                        </a>
-                        <a href="#">Home</a>
+            </div>
+        </header>
+        <main>
+            <section class="upgrade">
+                <div class="wrap">
+                    <div class="btn">
+                        <button>EFFETTUA L'UPGRADE</button>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./img/search.svg" alt="search">
-                        </a>
-                        <a href="#">Cerca</a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src="./img/libreria.svg" alt="libreria">
-                        </a>
-                        <a href="#">La tua libreria</a>
-                    </div>
-                </nav>
-                <div class="playlist">
-                    <ul>PLAYLIST
-                        <li>
-                            <i class="fa-solid fa-square-plus"></i>
-                            Crea Playlist
+                </div>
+            </section>
+            <nav class="section-nav">
+                <div class="wrap">
+                    <ul>
+                        <li>IN EVIDENZA
+                            <div class="in-evidenza"></div>
                         </li>
-                        <li>Chill</li>
-                        <li>Party</li>
-                        <li>Roba Nuova</li>
-                        <li>Consigliati</li>
-                        <li>#Metal</li>
-                        <li>#Pop</li>
-                        <li>#Indie</li> 
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
                     </ul>
                 </div>
-            </div>
-            <div class="profile">
-                <a href="#">
-                    <i class="fa-solid fa-circle-info visible"></i>
-                    <small>Installa app</small>
-                </a>
-                <br>
-                <hr>
-                <div class="profile-link">
-                    <a href="#">
-                        <img src="./img/profile.svg" alt="profile">
-                    </a>
-                </div>
-                <span class="name">Jhon Doe</span>
-            </div>
-        </div>
-    </header>
-    <main></main>
+            </nav>
+            <section></section>
+            <section></section>
+            <section></section>
+        </main>
+    </div>
     <footer>
         <div class="wrapper">
             <div class="row">
@@ -102,7 +129,9 @@
                         </div>
                         <div class="music-time">
                             <small>0:25</small>
-                            <div class="music-bar"></div>
+                            <div class="music-bar">
+                                <div class="bar-inside"></div>
+                            </div>
                             <small>4:35</small>
                         </div>
                 </div>
@@ -110,7 +139,9 @@
                     <i class="fa-solid fa-list"></i>
                     <i class="fa-solid fa-tv"></i>
                     <i class="fa-solid fa-volume-high"></i>
-                    <div class="volume"></div>
+                    <div class="volume">
+                        <div class="bar-inside"></div>
+                    </div>
                 </div>
             </div>
         </div>

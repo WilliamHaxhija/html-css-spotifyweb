@@ -14,6 +14,7 @@
 
 body {
     font-family: Montferrat, sans-serif;
+    font-size: 14px;
     color: white;
 }
 
@@ -34,6 +35,12 @@ a {
     color: white;
     vertical-align: middle;
 }
+
+.app-wrapper {
+    display: flex;
+    height: calc(100vh - 5.4rem);
+}
+
 /*--------------
      HEADER
 --------------*/
@@ -48,7 +55,7 @@ header .wrap {
     flex-direction: column;
     justify-content: space-between;
     max-width: 15rem;
-    height: calc(100vh - 5.4rem);
+    height: 100%;
     background-color: black;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
@@ -140,6 +147,79 @@ header .profile i {
       MAIN
 --------------*/
 
+main {
+    flex-grow: 1;
+}
+/*--------------
+    SECTIONS
+--------------*/
+
+section {
+    background-color: #141922;
+    width: 100%;
+}
+
+/*--- Section upgrade ---*/
+
+.upgrade {
+    background-color: #080b12;
+    height: 5.4rem;
+}
+
+.upgrade .wrap {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    height: 50%;
+    margin-right: 1.5rem;
+}
+
+button {
+    color: white;
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/*--- Section Nav ---*/
+
+.section-nav {
+    background-color: #141922;
+}
+
+.section-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #a3a3a3;
+    font-weight: 700;
+}
+
+.section-nav li {
+    margin: 1rem 0.7rem;
+}
+
+.section-nav li:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in-evidenza {
+    background-color: #adff2f;
+    height: 3px;
+    width: 40%;
+    margin-top: 3px;
+}
+
 /*--------------
      FOOTER
 --------------*/
@@ -225,7 +305,7 @@ footer img {
 
 .music-bar, .volume {
     display: inline-block;
-    background-color: white;
+    background-color: #5a5a5a;
     height: 4px;
     width: 45%;
     border-radius: 1rem;
@@ -235,12 +315,15 @@ footer img {
     width: 60%;
 }
 
-.save-track, .artist-dscr small {
-    color: #878787;
+.bar-inside {
+    height: 100%;
+    width: 25%;
+    background-color: #c1c1c1;
+    border-radius: 1rem;
 }
 
-.music-bar, .volume {
-    background-color: #5a5a5a;
+.save-track, .artist-dscr small {
+    color: #878787;
 }
 
 footer span {
@@ -288,7 +371,7 @@ footer span {
     }
 
     header .wrap {
-        max-width: 4.2rem;
+        width: 4.2rem;
         padding: 0 1rem 1rem 1rem;
     }
 
@@ -320,6 +403,10 @@ footer span {
 
     header ul {
         display: none;
+    }
+
+    .playlist {
+        overflow-y: auto;
     }
 
     header .profile i {
@@ -359,7 +446,7 @@ footer span {
         gap: 0.5rem;
     }
 
-    .volume [
-        width: 60%;
-    ]
+    .volume {
+        width: 45%;
+    }
 }
