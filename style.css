@@ -578,6 +578,10 @@ header ul::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
         margin-top: -1rem;
     }
 
+    header nav {
+        flex-grow: 1;
+    }
+
     header nav div a:last-child {
         display: none;
     }
@@ -590,7 +594,7 @@ header ul::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
         margin-top: 1rem;
     }
 
-    header ul {
+    header ul, header h4, header .playlist span {
         display: none;
     }
 
