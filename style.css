@@ -110,13 +110,27 @@ header ul i {
 }
 
 .playlist {
-    flex-grow: 1;
-    overflow-y: auto;
+   
+}
+
+.playlist span i, .playlist span {
+    color:#a3a3a3
+}
+
+header h4 {
+    margin-top: 1rem;
+}
+
+.playlist span i {
+    font-size: 2.6rem;
+    margin-top: 0.6rem;
 }
 
 header ul {
+    flex-grow: 1;
     list-style: none;
-    margin-top: 1.5rem;
+    margin-top: 0.8rem;
+    overflow-y: auto;
 }
 
 header li {
@@ -128,6 +142,10 @@ header li {
 hr {
     margin: 0.7rem 0;
     border-color: #a3a3a3;
+}
+
+.profile {
+    z-index: 1;
 }
 
 .profile img {
@@ -426,6 +444,10 @@ i:hover, a:hover, li:hover, small:not(section small):hover, .music-bar:hover, .v
     transition: 0.2s;
 }
 
+.fa-square-plus:hover, .playlist span:hover  {
+    color: white;
+}
+
 nav div a:last-child:hover {
     color: white;
     cursor: pointer;
@@ -463,11 +485,26 @@ section img:hover + .fa-circle-play {
 }
 
 .music-ctrl .fa-solid:hover {
-    font-size: 1.2rem;
+    transform: scale(1.2);
 }
 
 .music-ctrl .fa-circle-play:hover {
-    font-size: 2.3rem;
+    transform: scale(1.2);
+}
+
+/*--- Scrollbar ---*/
+header ul::-webkit-scrollbar, main::-webkit-scrollbar {
+    width: 10px;
+}
+
+header ul::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
+    background-color: #5a5a5a;
+    border-radius: 50px;
+}
+
+header ul::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
+    background-color: #a3a3a3;
+    border-radius: 50px;
 }
 
 /*--------------
