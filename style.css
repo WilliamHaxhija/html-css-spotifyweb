@@ -397,12 +397,15 @@ footer img {
     display: inline-block;
     background-color: #5a5a5a;
     height: 4px;
-    width: 45%;
     border-radius: 1rem;
 }
 
 .music-bar {
     width: 60%;
+}
+
+.volume {
+    width: 35%;
 }
 
 .bar-inside {
@@ -523,6 +526,10 @@ header ul::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
 
        .creato-per .col, .artisti-popolari .col {
         max-width: calc(25% - 1rem);
+       }
+
+       .volume {
+        width: 45%;
        }
 }
 
