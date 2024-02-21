@@ -432,14 +432,8 @@ nav div a:last-child:hover {
 }
 
 button:hover {
-        color: white;
-        padding: 1rem 2.6rem;
-        border-radius: 50px;
-        background-color: transparent;
-        border-color: white;
-        font-size: 0.8rem;
-        font-weight: 700;
-        transition: 0.1s;
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
 section .img-wrap:hover img{
